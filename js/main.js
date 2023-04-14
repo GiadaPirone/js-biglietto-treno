@@ -1,3 +1,5 @@
+function myFunction(){
+
 //prezzo per km del biglietto
 let prezzoPerKm = 0.21;
 let chilometri = prompt ("inserisci i km che devi percorrere");
@@ -14,7 +16,7 @@ if (età < 18){
 // il passeggero ha + o = 18 anni
 if( età==18 ||età>18){
     alert ("pagherai il biglietto a prezzo intero");
-    document.getElementById("prezzoFinale").innerText = prezzoBiglietto.toFixed(2);
+    document.getElementById("demo").innerText = prezzoBiglietto.toFixed(2);
 }
 
 
@@ -25,12 +27,12 @@ if ( età > 65){
 } 
 // il passeggero ha > o = 18 anni
 if( età ==65 || età < 65){
-    document.getElementById("prezzoFinale").innerText = prezzoBiglietto.toFixed(2);
+    document.getElementById("demo").innerText = prezzoBiglietto.toFixed(2);
 }
 
-document.getElementById("prezzoFinale").innerText = prezzoBigliettoSconto.toFixed(2);
+document.getElementById("demo").innerText = prezzoBigliettoSconto.toFixed(2);
 
-
+}
   
 
 
